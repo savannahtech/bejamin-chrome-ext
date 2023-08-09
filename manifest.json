@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Website Info Extension",
+    "version": "1.0",
+    "description": "Get name, meta, and languages information from a website page.",
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/info.png",
+        "48": "images/info.png",
+        "128": "images/info.png"
+      }
+    },
+    "icons": {
+      "16": "images/info.png",
+      "48": "images/info.png",
+      "128": "images/info.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      }
+  }
+  
